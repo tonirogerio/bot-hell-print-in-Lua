@@ -1,0 +1,62 @@
+Bot feito em Lua para Hell Print por TONY ROGERIO
+
+Como configurar:::
+1 - Entre na pasta Modules, depois abra o arquivo config.lua com o programa Notepad++ ou UoPilot.
+
+
+2 - Copie e cole o arquivo Launcher.bat dentro da pasta do jogo, isso fará seu jogo abrir de maneira rápida
+sem passar pela tela de atualização.
+
+
+3 - Copie o caminho da pasta, e edite o local,
+config.clientLocation = ([[caminho da sua pasta aqui]]) 
+
+Exemplo:
+config.clientLocation = ([[C:\Program Files (x86)\TalismanOnline\Launcher.bat]])
+
+
+4 - Edite os tempos de espera.
+
+M = 600  , tempo usado para fazer a quest
+S = 1000  
+SS = 2000  
+SSS = 3000 , tempo para entrar no jogo após apertar o botão Enter Game  
+C = 13000  , esse é o tempo para abrir o jogo
+
+
+5 - Edite o nome da janela do jogo, isso é usado para verificar se o bot não fez o login,
+ou esta em "Server Busy", então o bot fecha a atual janela e tenta fazer login novamente.
+
+config.winName1 = "Talisman Online | Giant Sky Medal | ver.5925" 
+config.winName2 = "Talisman Online | ver.5925"
+
+Importante: O modo de verificar isso esta em (Modules, hellprint.lua) nessas linhas 99, 125, 150
+(( if color(90, 42) ~= 131244 then )) funciona assim (( se na coordenada (90, 42) for diferente da cor 131244 )) 
+usei a cor vermelha no inicio do do hp do char, então se o jogo não encontrar essa cor, ele tenta de novo.
+
+
+
+6 - Pegue todas as coordenadas necessárias com o UoPilot em:
+
+-- Cordinates inside the game
+config.cords = {
+	account = {},
+	password = {}, só essa que não precisa, pois não esta em uso ainda.
+	char1 = {}, 
+	char2 = {}, 
+	char3 = {}, 
+	entergame = {} 
+}
+
+-- Quest Hell print cordinates
+config.quest = {
+	selectnpc = {}, 
+	talknpc = {}, 
+	selectquest = {}, 
+	acceptquest = {}, 
+	closequest = {}, 
+	deliverquest = {} 
+}
+
+ 
+
