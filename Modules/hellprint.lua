@@ -31,55 +31,55 @@ end
 -- Function to select char 1
 function hp.selectChar1()
 	wait(M)
-	left(config.cords.char1[1], config.cords.char1[2]) wait(S)
+	kleft(config.cords.char1[1], config.cords.char1[2]) wait(S)
 	
-	left(config.cords.entergame[1], config.cords.entergame[2])
-	left(config.cords.entergame[1], config.cords.entergame[2]) wait(SSS)
+	kleft(config.cords.entergame[1], config.cords.entergame[2])
+	kleft(config.cords.entergame[1], config.cords.entergame[2]) wait(SSS)
 end
 
 -- Function to select char 2
 function hp.selectChar2()
 	wait(M)
-	left(config.cords.char2[1], config.cords.char2[2]) wait(S)
+	kleft(config.cords.char2[1], config.cords.char2[2]) wait(S)
 	
-	left(config.cords.entergame[1], config.cords.entergame[2])
-	left(config.cords.entergame[1], config.cords.entergame[2]) wait(SSS)
+	kleft(config.cords.entergame[1], config.cords.entergame[2])
+	kleft(config.cords.entergame[1], config.cords.entergame[2]) wait(SSS)
 end
 
 -- Function to select char 3
 function hp.selectChar3()
 	wait(M)
-	left(config.cords.char3[1], config.cords.char3[2]) wait(S)
+	kleft(config.cords.char3[1], config.cords.char3[2]) wait(S)
 	
-	left(config.cords.entergame[1], config.cords.entergame[2])
-	left(config.cords.entergame[1], config.cords.entergame[2]) wait(SSS)
+	kleft(config.cords.entergame[1], config.cords.entergame[2])
+	kleft(config.cords.entergame[1], config.cords.entergame[2]) wait(SSS)
 end
 
 -- Function to do Hell Print quest
 function hp.quest()
-	right(config.quest.selectnpc[1], config.quest.selectnpc[2]) wait(M)
-	right(config.quest.talknpc[1], config.quest.talknpc[2]) wait(M)
+	kright(config.quest.selectnpc[1], config.quest.selectnpc[2]) wait(M)
+	kright(config.quest.talknpc[1], config.quest.talknpc[2]) wait(M)
 	
-	left(config.quest.selectquest[1], config.quest.selectquest[2]) 
-	left(config.quest.selectquest[1], config.quest.selectquest[2]) wait(M)
+	kleft(config.quest.selectquest[1], config.quest.selectquest[2]) 
+	kleft(config.quest.selectquest[1], config.quest.selectquest[2]) wait(M)
 	
-	left(config.quest.acceptquest[1], config.quest.acceptquest[2]) 
-	left(config.quest.acceptquest[1], config.quest.acceptquest[2]) wait(M)
+	kleft(config.quest.acceptquest[1], config.quest.acceptquest[2]) 
+	kleft(config.quest.acceptquest[1], config.quest.acceptquest[2]) wait(M)
 	
-	left(config.quest.closequest[1], config.quest.closequest[2]) 
-	left(config.quest.closequest[1], config.quest.closequest[2]) wait(M)
+	kleft(config.quest.closequest[1], config.quest.closequest[2]) 
+	kleft(config.quest.closequest[1], config.quest.closequest[2]) wait(M)
 	
-	right(config.quest.selectnpc[1], config.quest.selectnpc[2]) wait(M)
-	right(config.quest.talknpc[1], config.quest.talknpc[2]) wait(M)
+	kright(config.quest.selectnpc[1], config.quest.selectnpc[2]) wait(M)
+	kright(config.quest.talknpc[1], config.quest.talknpc[2]) wait(M)
 	
-	left(config.quest.selectquest[1], config.quest.selectquest[2]) 
-	left(config.quest.selectquest[1], config.quest.selectquest[2]) wait(M)
+	kleft(config.quest.selectquest[1], config.quest.selectquest[2]) 
+	kleft(config.quest.selectquest[1], config.quest.selectquest[2]) wait(M)
 	
-	left(config.quest.deliverquest[1], config.quest.deliverquest[2]) 
-	left(config.quest.deliverquest[1], config.quest.deliverquest[2]) wait(M)
+	kleft(config.quest.deliverquest[1], config.quest.deliverquest[2]) 
+	kleft(config.quest.deliverquest[1], config.quest.deliverquest[2]) wait(M)
 	
-	left(config.quest.closequest[1], config.quest.closequest[2]) 
-	left(config.quest.closequest[1], config.quest.closequest[2]) wait(S)
+	kleft(config.quest.closequest[1], config.quest.closequest[2]) 
+	kleft(config.quest.closequest[1], config.quest.closequest[2]) wait(S)
 end
 
 -- Function to close window
