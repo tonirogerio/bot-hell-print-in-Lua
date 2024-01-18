@@ -77,9 +77,10 @@ function hp.quest()
 	
 	kleft(config.quest.deliverquest[1], config.quest.deliverquest[2]) 
 	kleft(config.quest.deliverquest[1], config.quest.deliverquest[2]) wait(M)
-	
-	kleft(config.quest.closequest[1], config.quest.closequest[2]) 
-	kleft(config.quest.closequest[1], config.quest.closequest[2]) wait(S)
+
+	-- removed to prevent char run to other side
+	--kleft(config.quest.closequest[1], config.quest.closequest[2]) 
+	--kleft(config.quest.closequest[1], config.quest.closequest[2]) wait(S)
 end
 
 -- Function to close window
